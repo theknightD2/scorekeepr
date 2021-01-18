@@ -1,0 +1,70 @@
+.TitleFont {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 80px;
+  color: Black;
+}
+.TitleFontDark {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 80px;
+  color: White;
+}
+.BodyFont {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+.TextCenter {
+  text-align: center;
+}
+.DefaultButton {
+  background-color: #FFFFFF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  font-family: "Raleway", sans-serif;
+  background-color: Pink;
+  color: Black;
+  text: "Default Button";
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.flex-container button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.flex-container settngs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.SmallPrint {
+  font-size: 20px;
+}
+#DayMode:hover {
+  background-color: White;
+  color: Black;
+}
+#DayModeBody {
+  color: white;
+}
+#ScoreDay {
+  color: White;
+}
+#HeadDay {
+  color: White;
+}
+#TestDay {
+  color: White;
+}

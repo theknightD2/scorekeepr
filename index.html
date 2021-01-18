@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff" />
+    <link rel="stylesheet" href="master.css" />
+    <meta
+      name="description"
+      content="Scorekeepr keeps your score in an easy way!"
+    />
+    <title>Scorekeepr</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://cdn.glitch.com/4c27955e-f4d4-4331-8955-f7a22d75611e%2FScorekeeprIcon.ico?v=1609714647896"
+    />
+    <div class="TitleFont">
+      <div id="HeadDark">
+        <div class="BtnBar">
+          <link
+            rel="icon"
+            type="image/ico"
+            href="https://cdn.glitch.com/4c27955e-f4d4-4331-8955-f7a22d75611e%2FScorekeeprIcon.ico?v=1609709453000"
+          />
+          <div class="flex-container Button">
+            <button class="DefaultButton PopupButton" id="PopupButton">
+              Settings
+            </button>
+            <button class="DefaultButton Share" id="ShareBtn">
+              Share
+            </button>
+          </div>
+        </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <div class="TextCenter">
+          Welcome to Scorekeepr!
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b7a1d54968.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="Popup" class="Popup">
+      <div class="Popup-Content">
+        <span class="close Settings">Close &times;</span>
+        <p>
+          Settings:
+        </p>
+        <div class="flex-container Settings">
+          <button class="DefaultButton Mode" id="DarkMode" onclick="DarkMode()">
+            Dark Mode
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="Share" class="Popup">
+      <div class="Popup-Content">
+        <span class="close ShareSpan">Close &times;</span>
+        <p>
+          Share:
+        </p>
+        <a href="https://facebook.com" id="facebook">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter-square fa-3x"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fab fa-instagram-square fa-3x"></i>
+        </a>
+        <i id="Blank" class="far fa-copy"></i>
+        <input
+          type="text"
+          disabled
+          value="https://scorekeepr.glitch.me"
+          id="CopyURL"
+        /><button class="DefaultButton Copy" onclick="CopyURL()">Copy URL!</button>
+        <div class="SmallPrint">
+          <p>
+            This code is licenced under
+            <a
+              href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+              >CC BY-NC-SA 4.0.</a
+            >
+          </p>
+        </div>
+        <div class="flex-container"></div>
+        <img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+        /><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+        /><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+        /><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+        />
+      </div>
+    </div>
+    <div id="DarkModeBody" class="BodyFont">
+      <p>
+        Scorekeepr can keep your score in a simple user interface!
+      </p>
+      <h3>
+        Current Score:
+      </h3>
+    </div>
+    <div class="TextCenter">
+      <div class="TitleFont">
+        <p id="Score">
+          0
+        </p>
+      </div>
+    </div>
+    <div class="BodyFont">
+      <button
+        class="DefaultButton Plus"
+        id="Plus"
+        type="button"
+        onclick="ScorePlus1()"
+      >
+        Add 1 to score!
+      </button>
+      <button
+        class="DefaultButton Minus"
+        id="Minus"
+        type="button"
+        onclick="ScoreMinus1()"
+      >
+        Deduct 1 from score!
+      </button>
+      <button
+        class="DefaultButton Reset"
+        id="Reset"
+        type="button"
+        onclick="ResetScore()"
+      >
+        Reset Score!
+      </button>
+      <button
+        class="DefaultButton Cookie"
+        id="Cookie"
+        type="button"
+        onclick="CookieVisit()"
+      >
+        Check Cookie (Beta)
+      </button>
+      <p id="TestDark">Update Cookie (Beta)</p>
+      <p id="ChangelogDark">
+        View Our <a href="Changelog.html">Changelog</a> Here!
+      </p>
+    </div>
+
+    <script src="Master.js"></script>
+  </body>
+</html>
+<!-- https://cdn.glitch.com/0562ca38-a4b9-4892-b8ec-81e1cd7e70ea%2FStep%20One.txt?v=1608687329914 -->

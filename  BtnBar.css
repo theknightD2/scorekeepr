@@ -1,0 +1,43 @@
+#DarkMode {
+  background-color: Orange;
+  font-size: 18px;
+  color: white;
+}
+#DarkMode:hover {
+  background-color: Black;
+  color: White;
+}
+#DayMode {
+  background-color: Cyan;
+  font-size: 18px;
+  color: Black;
+}
+.PopupButton {
+  background-color: #00AFB9;
+  font-size: 20px;
+  color: white;
+}
+#PopupButton {
+  background-color: #00AFB9;
+  color: white;
+}
+.Share {
+  background-color: purple;
+  color:white
+}
+#PopupButton:hover {
+  background-color: gray;
+  color: #00AFB9;
+}
+.PopupButton:hover {
+  background-color: black;
+  color: #00AFB9;
+}
+#PopupButtonDark {
+  color: black;
+  background-color: #00AFB9;
+}
+#PopupButtonDark:hover {
+  color: #00AFB9;
+  background-color: gray;
+}
