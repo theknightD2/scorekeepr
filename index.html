@@ -79,7 +79,9 @@
           disabled
           value="https://scorekeepr.glitch.me"
           id="CopyURL"
-        /><button class="DefaultButton Copy" onclick="CopyURL()">Copy URL!</button>
+        /><button class="DefaultButton Copy" onclick="CopyURL()">
+          Copy URL!
+        </button>
         <div class="SmallPrint">
           <p>
             This code is licenced under
@@ -110,41 +112,29 @@
         Scorekeepr can keep your score in a simple user interface!
       </p>
       <h3>
-        Current Score:
+        Current Scores:
       </h3>
     </div>
     <div class="TextCenter">
-      <div class="TitleFont">
-        <p id="Score">
-          0
-        </p>
-      </div>
+      <div class="TitleFont"></div>
     </div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>User 1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>User 2</td>
+        <td>0</td>
+      </tr>
+    </table>
+
     <div class="BodyFont">
-      <button
-        class="DefaultButton Plus"
-        id="Plus"
-        type="button"
-        onclick="ScorePlus1()"
-      >
-        Add 1 to score!
-      </button>
-      <button
-        class="DefaultButton Minus"
-        id="Minus"
-        type="button"
-        onclick="ScoreMinus1()"
-      >
-        Deduct 1 from score!
-      </button>
-      <button
-        class="DefaultButton Reset"
-        id="Reset"
-        type="button"
-        onclick="ResetScore()"
-      >
-        Reset Score!
-      </button>
+      <br />
       <button
         class="DefaultButton Cookie"
         id="Cookie"
@@ -160,6 +150,36 @@
     </div>
 
     <script src="Master.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBDCGkZAwt7fGc7ttWrfQGvNFTYQinPcEw",
+        authDomain: "scorekeepr-cb478.firebaseapp.com",
+        projectId: "scorekeepr-cb478",
+        storageBucket: "scorekeepr-cb478.appspot.com",
+        messagingSenderId: "1008792644107",
+        appId: "1:1008792644107:web:593f8e815937ca0026f50e",
+        measurementId: "G-3KZ15GP3F2"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <div class="BodyFont">
+      <div class="TextCenter">
+      <a id="a" href="Coming Soon.html">About Scorekeepr</a><br>
+      <a id="b" href="Coming Soon.html">Beta Testing Website</a><br>
+      <a id="c" href="Coming Soon.html">Who knows?</a><br>
+      </div>
+    </div>
   </body>
 </html>
 <!-- https://cdn.glitch.com/0562ca38-a4b9-4892-b8ec-81e1cd7e70ea%2FStep%20One.txt?v=1608687329914 -->

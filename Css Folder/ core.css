@@ -68,3 +68,57 @@
 #TestDay {
   color: White;
 }
+table {
+  font-family: "Raleway", sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td {
+  font-family: "Raleway", sans-serif;
+  padding: 8px;
+  font-weight: 100;
+  font-size: 30px;
+  border: 1px solid #ddd
+}
+th {
+  font-size: 50px;
+  padding: 8px;
+  font-weight: 100;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+th:hover{
+  animation: 
+}
+#reveal {
+  color: white
+}
+#a {
+  align: center;
+  position: relative;
+  animation: moveOdd 5s;
+  animation-duration: 5s;
+}
+#b {
+  position : relative;
+  animation: moveEven 10s infinite;
+}
+#c {
+  position: relative;
+  animation-duration: 5s;  
+}
+@keyframes moveOdd {
+  0% {left: 0%;}
+  25% {left: 100%;}
+  50% {left: 25%;}
+  75% {left: 75%;}
+  100% {left: 50%;}
+}
+@keyframes moveEven {
+  0% {left: }
+}

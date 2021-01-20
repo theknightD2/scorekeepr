@@ -6,6 +6,6 @@ if (location.protocol !== "https:") {
     `https:${location.href.substring(location.protocol.length)}`
   );
 }
-if (location.href = "https://scorekeepr.glitch.me/") {
-  location.replace ("https://scorekeepr.glitch.me/404.html")
+if (location.href != "https://scorekeepr.glitch.me/") {
+  location.replace ("https://scorekeepr.glitch.me/")
 }
