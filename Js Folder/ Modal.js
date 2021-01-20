@@ -39,9 +39,9 @@ ShareSpan.onclick = function() {
   ShareModal.style.display = "none";
 };
 function CopyURL() {
-  var copyText = document.getElementById("CopyURL");
   document.getElementById("CopyURL").disabled = false;
-
+  document.getElementById("CopyURL").value = "https://scorekeepr.glitch.me";
+  var copyText = document.getElementById("CopyURL");
 
   /* Select the text field */
   copyText.select();
