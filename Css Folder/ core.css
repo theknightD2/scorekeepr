@@ -93,7 +93,7 @@ tr:nth-child(even) {
   border: 1px solid red;
 }
 th:hover{
-  animation: 
+  animation:
 }
 #reveal {
   color: white
@@ -106,19 +106,27 @@ th:hover{
 }
 #b {
   position : relative;
-  animation: moveEven 10s infinite;
+  align: center;
+  animation: moveEven 5s;
+  animation-duration: 5s;
 }
 #c {
   position: relative;
-  animation-duration: 5s;  
+  align: center;
+  animation-duration: 5s;
+  animation: moveOdd 5s;
 }
 @keyframes moveOdd {
-  0% {left: 0%;}
-  25% {left: 100%;}
-  50% {left: 25%;}
-  75% {left: 75%;}
-  100% {left: 50%;}
+  0% {left: -50%;}
+  25% {left: 50%;}
+  50% {left: -25%;}
+  75% {left: 25%;}
+  100% {left: 0%;}
 }
 @keyframes moveEven {
-  0% {left: }
+  0% {left: 50%;}
+  25% {left: -50%;}
+  50% {left: 25%;}
+  75% {left: -25%;}
+  100% {left: 0%;}
 }
