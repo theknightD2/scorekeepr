@@ -101,20 +101,20 @@ th:hover{
 #a {
   align: center;
   position: relative;
-  animation: moveOdd 5s;
-  animation-duration: 5s;
+  animation: moveOdd 1s;
+  animation-duration: 1s;
 }
 #b {
   position : relative;
   align: center;
-  animation: moveEven 5s;
-  animation-duration: 5s;
+  animation: moveEven 1s;
+  animation-duration: 1s;
 }
 #c {
   position: relative;
   align: center;
-  animation-duration: 5s;
-  animation: moveOdd 5s;
+  animation-duration: 1s;
+  animation: moveOdd 1s;
 }
 @keyframes moveOdd {
   0% {left: -50%;}
