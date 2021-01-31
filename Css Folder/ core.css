@@ -88,37 +88,19 @@ th {
   text-align: center;
   border: 1px solid #ddd;
 }
-tr:nth-child(even) {
+tr:nth-child(even){
   background-color: #f2f2f2;
   border: 1px solid red;
 }
 th:hover{
-  animation: 
+  animation:
 }
 #reveal {
-  color: white
-}
-#a {
+  color: white;
   align: center;
-  position: relative;
-  animation: moveOdd 5s;
-  animation-duration: 5s;
 }
-#b {
-  position : relative;
-  animation: moveEven 10s infinite;
-}
-#c {
-  position: relative;
-  animation-duration: 5s;  
-}
-@keyframes moveOdd {
-  0% {left: 0%;}
-  25% {left: 100%;}
-  50% {left: 25%;}
-  75% {left: 75%;}
-  100% {left: 50%;}
-}
-@keyframes moveEven {
-  0% {left: }
+
+.Btn {
+  background-color: white;
+  border: 1px solid white;
 }

@@ -1,4 +1,3 @@
-
 var x = 0;
 var mode = "Day";
 var xss = null;
@@ -57,9 +56,6 @@ function Dark() {
   document.getElementById("TestDark").id = "TestDay";
   document.getElementById("DarkMode").id = "DayMode";
   document.getElementById("DayMode").innerHTML = "Day Mode";
-  document.getElementById("Plus").id = "PlusDark";
-  document.getElementById("Minus").id = "MinusDark";
-  document.getElementById("Reset").id = "ResetDark";
   document.getElementById("Cookie").id = "CookieDark";
   document.getElementById("PopupButton").id = "PopupButtonDark";
   mode = "Dark";
@@ -74,9 +70,6 @@ function Day() {
   document.getElementById("TestDay").id = "TestDark";
   document.getElementById("DayMode").id = "DarkMode";
   document.getElementById("DarkMode").innerHTML = "Dark Mode";
-  document.getElementById("PlusDark").id = "Plus";
-  document.getElementById("MinusDark").id = "Minus";
-  document.getElementById("ResetDark").id = "Reset";
   document.getElementById("CookieDark").id = "Cookie";
   document.getElementById("PopupButtonDark").id = "PopupButton";
   mode = "Day";
@@ -90,4 +83,17 @@ function CookieVisit() {
       document.getElementById("TestDay").innerHTML = CMode;
       break;
   }
+}
+var table = document.getElementById("Table");
+var Name = 3;
+var UserName = "User "
+function CreateRow() {
+  var NewerName = UserName + Name;
+  var NewRow = table.insertRow(-1)
+  var NewName = NewRow.insertCell(-1)
+  var NewScore = NewRow.insertCell(-1)
+  var NewButton = document.NewRow.appendChild(NewButton);  
+  NewName.innerHTML = NewerName;
+  NewScore.innerHTML = 0;
+  Name = Name + 1;
 }
